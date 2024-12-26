@@ -52,12 +52,12 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        $users = User::factory(1)
-            ->state(function () use ($postalCodes) {
-                return [
-                    'postal_id' => $postalCodes->random()->id
-                ];
-        })->create();
+        // $users = User::factory(1)
+        //     ->state(function () use ($postalCodes) {
+        //         return [
+        //             'postal_id' => $postalCodes->random()->id
+        //         ];
+        // })->create();
 
         $categoryList = [
             'All Category',
